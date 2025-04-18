@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
+// tailwind.config.js
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // <- this is important
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-      },
-      gridTemplateColumns: {
-        "70/30": "70% 28%",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
